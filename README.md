@@ -1,4 +1,4 @@
-# ${\mathcal X}$FT: Unlocking the Power of Code Instruction Tuning by Simply Merging Upcycled Mixture-of-Experts
+# XFT: Unlocking the Power of Code Instruction Tuning by Simply Merging Upcycled Mixture-of-Experts
 
 > [!IMPORTANT]
 > We are constantly working on improving the documentation and adding more implementation details. Plese stay tuned!
