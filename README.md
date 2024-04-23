@@ -7,7 +7,8 @@ We build XFT based on the implementation of Magicoder. Please follow the origina
 
 Step 1: Upcycle an MoE model from DeepSeek-Coder-1.3B Base.
 ```bash
-export PYTHONPATH=:[YOUR_HOME_PATH]/xft/src/magicoder:[YOUR_HOME_PATH]/xft/src/magicoder/src
+export PYTHONPATH=:[YOUR_HOME_PATH]/xft/src:[YOUR_HOME_PATH]/xft/src/magicoder
+cd [YOUR_HOME_PATH]/xft/src/magicoder
 python convert_dense_to_moe.py \
  --model deepseek-ai/deepseek-coder-1.3b-base \
  --save_path "deepseek-coder-8x1.3b-top-6-moe-base"
