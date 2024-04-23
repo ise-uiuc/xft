@@ -1,9 +1,9 @@
-# XFT: Unlocking the Power of Code Instruction Tuning by Simply Merging Upcycled Mixture-of-Experts
+# ${\mathcal X}$FT: Unlocking the Power of Code Instruction Tuning by Simply Merging Upcycled Mixture-of-Experts
 
 > [!IMPORTANT]
 > We are constantly working on improving the documentation and adding more implementation details. Plese stay tuned!
 
-We build XFT based on the implementation of Magicoder. Please follow the original instruction of Magicoder (https://github.com/ise-uiuc/magicoder) to install your environment. To obtain XFT_ds, you need to run the code step by step as follows:
+We build XFT based on the implementation of Magicoder. Please follow the original instruction of Magicoder (https://github.com/ise-uiuc/magicoder) to install your environment. To obtain XFT_DS, you need to run the code step by step as follows:
 
 Step 1: Upcycle an MoE model from DeepSeek-Coder-1.3B Base.
 ```bash
