@@ -1,5 +1,9 @@
 # XFT: Unlocking the Power of Code Instruction Tuning by Simply Merging Upcycled Mixture-of-Experts
 
+<p align="left">
+    <a href="https://arxiv.org/abs/2404.15247"><img src="https://img.shields.io/badge/arXiv-2404.15247-b31b1b.svg?style=for-the-badge">
+</p>
+
 > [!IMPORTANT]
 > We are constantly working on cleaning the code, improving the documentation, and adding more implementation details. Plese stay tuned!
 
