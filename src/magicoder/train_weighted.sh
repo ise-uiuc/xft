@@ -1,6 +1,6 @@
 MODEL_KEY=deepseek-ai/deepseek-coder-1.3b-base
 MODEL_NAME_OR_PATH=ds-8x1.3b-top-6-universal-evol-instruct-5e-5_bs_64_epoch_4_weighted_dense
-OUTPUT_DIR=ds-8x1.3b-top-6-universal-evol-instruct-5e-5_bs_64_epoch_4_weighted_dense-lambda-75-5e-5_bs_64_epoch_1
+OUTPUT_DIR=ds-8x1.3b-top-6-universal-evol-instruct-5e-5_bs_64_epoch_4_weighted_dense-lambda-75-1e-5_bs_64_epoch_1
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port 29500 train.py \
     --model_key $MODEL_KEY \
@@ -24,5 +24,5 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port 29500 train.p
     --optim adafactor \
     --max_grad_norm -1 \
     --warmup_steps 125 \
-    --learning_rate 5e-5 \
+    --learning_rate 1e-5 \
     --lr_scheduler_type linear \
