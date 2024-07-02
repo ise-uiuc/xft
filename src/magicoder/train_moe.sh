@@ -12,8 +12,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port 29500 train.p
     --output_dir $OUTPUT_DIR \
     --bf16 True \
     --num_train_epochs 4 \
-    --per_device_train_batch_size 1 \
-    --gradient_accumulation_steps 16 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 8 \
     --max_training_seq_length 1024 \
     --group_by_length False \
     --ddp_find_unused_parameters False \

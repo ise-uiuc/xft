@@ -7,7 +7,14 @@
 > [!IMPORTANT]
 > We are constantly working on cleaning the code, improving the documentation, and adding more implementation details. Plese stay tuned!
 
-We build XFT based on the implementation of Magicoder. Please follow the original instruction of Magicoder (https://github.com/ise-uiuc/magicoder) to install your environment. To obtain XFT_DS, you need to run the code step by step as follows:
+We build XFT based on the implementation of Magicoder (https://github.com/ise-uiuc/magicoder). To set up environment for experiments on DeepSeek-Coder-1.3B, please run the following command:
+```bash
+conda env create -f xft_env.yml
+conda activate xft
+pip install flash-attn==2.1.0 --no-build-isolation
+```
+
+To obtain XFT_DS, you need to run the code step by step as follows:
 
 Step 1: Upcycle an MoE model from DeepSeek-Coder-1.3B Base.
 ```bash
