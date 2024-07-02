@@ -2,7 +2,7 @@ MODEL_KEY=deepseek-ai/deepseek-coder-1.3b-base
 MODEL_NAME_OR_PATH=deepseek-ai/deepseek-coder-1.3b-base
 OUTPUT_DIR=ds-1.3b-evol-instruct-5e-5_bs_64_epoch_5
 
-CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port 29500 train.py \
+CUDA_VISIBLE_DEVICES=0,1 accelerate launch --main_process_port 29500 train.py \
     --model_key $MODEL_KEY \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --use_flash_attention True \
@@ -11,8 +11,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --main_process_port 29500 train.p
     --output_dir $OUTPUT_DIR \
     --bf16 True \
     --num_train_epochs 5 \
-    --per_device_train_batch_size 2 \
-    --gradient_accumulation_steps 8 \
+    --per_device_train_batch_size 16 \
+    --gradient_accumulation_steps 2 \
     --max_training_seq_length 1024 \
     --group_by_length False \
     --ddp_find_unused_parameters False \
